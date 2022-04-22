@@ -15,5 +15,17 @@ agent any
 				'''
 				}
 			}
+		stage('Test'){
+			steps{
+			sh 'npm run test'
+			}
 		}
+
+		stage('Start'){
+			steps{
+				sh 'npm run start'
+			}
+		}
+		
 	}
+}
