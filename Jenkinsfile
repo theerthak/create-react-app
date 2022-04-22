@@ -9,7 +9,10 @@ agent any
 		}
 		stage('npm install'){
 			steps{
-				sh 'npm install'
+				sh '''
+					echo "installing dependencies"
+					npm install
+				'''
 				}
 			}
 		}
